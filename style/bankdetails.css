@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+form {
+  background-color: #5c7cfa;
+  display: flex;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  margin-left: 300px;
+  gap: 30px;
+  padding: 40px 0;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form .bank-details,
+form .payment-done {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 100px; */
+}
+
+form .payment-done .details,
+form .bank-details .bank-address .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 50px; */
+}
+.submit {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: none;
+  background-color: #40c057;
+  padding: 8px 30px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #51cf66;
+}
+form p,
+form input {
+  margin-bottom: 18px;
+}
+form input {
+  height: 3.5vh;
+  border: none;
+  width: 14vw;
+  padding-left: 12px;
+  border-radius: 2px;
+}
+form img {
+  height: 50px;
+  width: auto;
+  transform: scale(4.5);
+  border-radius: 3px;
+  position: absolute;
+  left: -80px;
+  /* transform: translate(0, -50%); */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media only screen and (max-width: 600px) {
+  form {
+    width: 80vw;
+    gap: 0vw;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 30px 30px;
+    padding-top: 180px;
+    /* margin-left: 0px; */
+    margin: 50px auto;
+  }
+  form .payment-done,
+  form .bank-details {
+    width: 100%;
+  }
+  form .payment-done .details,
+  form .bank-details .bank-address .details {
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+  }
+  form p {
+    font-size: 14px;
+  }
+  form input {
+    width: 47vw;
+  }
+  form img {
+    height: 40px;
+    width: auto;
+    position: relative;
+    left: 0px;
+    top: -90px;
+    /* transform: scale(2); */
+  }
+}

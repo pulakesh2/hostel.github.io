@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/bankdetails.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="">
+      <img src="images/scan.png" alt="" />
+
+      <div class="payment-done">
+        <div class="id details">
+          <p>Transection Id:</p>
+          <input
+            type="text"
+            name="transection"
+            id="transection"
+            placeholder="your payment id"
+          />
+        </div>
+        <div class="sc details">
+          <p>screenshot:</p>
+          <input type="file" name="screenshot" id="screen-shot" />
+        </div>
+      </div>
+      <div class="bank-details">
+        <div class="bank-address">
+          <div class="account-number details">
+            <p>Account Number:</p>
+            <input
+              type="text"
+              name="acntNo"
+              id="acnt-no"
+              placeholder="bank acount number"
+            />
+          </div>
+          <div class="ifsc-details details">
+            <p>Ifsc Code:</p>
+            <input
+              type="text"
+              name="ifsc-code"
+              id="ifsc"
+              placeholder="branch"
+            />
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="submit">Pay</button>
+    </form>
+  </body>
+</html>
