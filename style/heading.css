@@ -24,7 +24,6 @@ header {
 }
 .header-section {
   background-size: cover;
-  background-color: red;
   height: 100vh;
   color: #fff;
 }
