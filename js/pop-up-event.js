@@ -35,7 +35,7 @@ const closeBox = function (e) {
   e.preventDefault();
   console.log(e.originalTarget === exits[0]);
   //   console.log("hello");
-  for (let i = 0; i < hiddenBoxs.length; i++) {
+  for (let i = 0; i < exits.length; i++) {
     if (e.originalTarget === exits[i]) {
       hiddenBoxs[i].classList.add("hidden");
       card.classList.remove("hidden");
