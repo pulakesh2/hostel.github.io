@@ -42,8 +42,12 @@ const closeBox = function (e) {
 //Event-->
 for (const button of buttons) {
   button.addEventListener("click", openBox);
+  //for mobile screen-->
+  button.addEventListener("touchstart", openBox);
 }
 
 for (const exit of exits) {
   exit.addEventListener("click", closeBox);
+  //for mobile screen-->
+  exit.addEventListener("touchstart", closeBox);
 }
