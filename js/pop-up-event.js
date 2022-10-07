@@ -19,6 +19,7 @@ const hiddenBoxs = [...hidden];
 
 //Event function-->
 const openBox = function (e) {
+    e.preventDefault();
   console.log(e.originalTarget === buttons[0]);
   for (let i = 0; i < buttons.length; i++) {
     if (e.originalTarget === buttons[i]) {
