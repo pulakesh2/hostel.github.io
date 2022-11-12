@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.form .form-body {
+  background-color: #364fc7;
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 40px auto;
+  gap: 1.5vh;
+  padding: 3vh 5vw;
+  padding-bottom: 8vh;
+  width: 30vw;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.form span {
+  color: #fff;
+  font-weight: 500;
+}
+
+.form input {
+  height: 4vh;
+  padding-left: 1vw;
+  width: 18vw;
+}
+.form .form-body .f-name,
+.form .form-body .l-name,
+.form .form-body .email-address,
+.form .form-body .batch,
+.form .form-body .ph-number,
+.form .form-body .event-name,
+.form .form-body .event-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message {
+  background-color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  border-bottom: 6px solid #51cf66;
+}
+.message h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.hidden {
+  display: none;
+}
+
+.form .form-body .submit {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 20%;
+  height: 10%;
+  border: none;
+  color: rgb(244, 245, 247);
+  background-color: #0c8599;
+
+  font-size: 18px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.form .form-body .submit:hover {
+  background-color: #15aabf;
+  /* font-weight: 00; */
+}
+@media only screen and (max-width: 600px) {
+  .form .form-body {
+    width: 80vw;
+  }
+  .form input {
+    width: 45vw;
+    padding-left: 4vw;
+  }
+  .form .form-body span {
+    font-size: 14px;
+  }
+  .message h1 {
+    font-size: 14px;
+  }
+}
