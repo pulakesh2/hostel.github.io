@@ -3,6 +3,8 @@
 body {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 html {
   font-size: 62.5%;
