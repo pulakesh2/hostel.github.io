@@ -14,8 +14,8 @@ const openMenu = function () {
   }
 };
 
+openMenu();
 
-console.log(headerSection.className);
 
 const navMobile = [openNav, closeNav];
 
