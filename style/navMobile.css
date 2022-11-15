@@ -45,7 +45,7 @@
     /* background-attachment: fixed; */
 
     /* PLACED */
-    transform: translateX(100%);
+   
 
     /* TRANSITION */
     transition: all 0.5s;
@@ -76,6 +76,6 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    transform: translateX(0%);
+    
   }
 }
