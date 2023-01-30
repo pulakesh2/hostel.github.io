@@ -40,6 +40,11 @@ nav img {
   color: #fff;
   height: 0rem;
 }
+
+nav {
+  background-color: #212529;
+  padding: 1rem 2rem;
+}
 nav a {
   text-decoration: none;
   font-size: 18px;
