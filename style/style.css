@@ -1,0 +1,197 @@
+/* ***************************** */
+/* SECTION HERO */
+/* ***************************** */
+header {
+  /* background-color: aqua; */
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.797),
+      rgba(34, 33, 33, 0.56)
+    ),
+    url(../hostel.JPG);
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+}
+.bc {
+  width: 100%;
+}
+.section-hero {
+  padding: 0 0 9.6rem 0;
+}
+.logo {
+  height: 2.2rem;
+  width: 2.2rem;
+  /* color: #0f1631;
+  font-weight: 600; */
+}
+/* .main-nav {
+} */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.2rem 3.2rem;
+  align-items: center;
+  margin-top: 0;
+}
+.nav-content.sticky {
+  position: fixed;
+  background-color: rgba(254, 245, 230, 0.97);
+  color: #dd8f00;
+  width: 100%;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  font-size: 1.8rem;
+  display: flex;
+  gap: 4.8rem;
+  transition: all 0.4s;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  opacity: 1;
+}
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.heading-hero {
+  width: 50%;
+  left: 10%;
+  bottom: 50%;
+  position: absolute;
+  /* transform: translate(-50%, 50%); */
+  transform: translateY(50%);
+}
+.hero-description {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  margin-top: 3.2rem;
+}
+/* ***************************** */
+/* SECTION WELCOME */
+/* ***************************** */
+.section-welcome {
+  padding: 9.6rem 0;
+  background-color: #fef5e6;
+}
+/* ***************************** */
+/* SECTION FEATURED IN */
+/* ***************************** */
+.section-featured {
+  padding: 9.6rem 0 4.8rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.welcome-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.hostel-moto {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+/* ***************************** */
+/* SECTION Event--Gallery--Team */
+/* ***************************** */
+.event-gallery-team {
+  padding: 9.6rem 0;
+}
+.step-text {
+  align-self: center;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img {
+  width: 100%;
+  border-radius: 25% 10%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  border-radius: 25% 10%;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+/* *************************** */
+/* Footer */
+/* *************************** */
+
+/* hiddeen */
+.hidden {
+  display: none;
+}
+.nav-hide {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.nav-show {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
